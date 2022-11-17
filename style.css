@@ -33,7 +33,11 @@ header div{
 
 input{
     height: 1rem;
-    width: 3rem;
+    width: 1.5rem;
+}
+
+.inches{
+    width: 2.5rem;
 }
 
 #mainContainer{
