@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <title>Screen Master</title>
+</head>
+<body>
+    <header>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-aspect-ratio" viewBox="0 0 16 16">
+                <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5v-9zM1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
+                <path d="M2 4.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H3v2.5a.5.5 0 0 1-1 0v-3zm12 7a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H13V8.5a.5.5 0 0 1 1 0v3z"/>
+            </svg>
+            <h1 id="title">Screen Master</h1>
+        </div>
+        <div><p id="subtitle">A screen size comparison tool</p></div>
+    </header>
+
+    <div id="mainContainer">
+        <div id="data1">
+            <div id="form1" class="form">
+                <label for="width1">Width: <input id="width1" name="width1" value="16" type="text" /></label>
+                <label for="height1">Height: <input id="height1" name="height1" value="9" type="text" /></label>
+                <label for="inches1">Inches: <input id="inches1" name="inches1" value="19.5" type="text" /></label>
+            </div>
+            
+            <div id="screen-1">
+                <div id="bar1"></div>
+                <div id="foot1"></div>
+            </div>
+        </div>
+    
+        <div id="data2">
+            <div id="form2" class="form">
+                <label for="width2">Width: <input id="width2" name="width2" value="16" type="text"></input></label>
+                <label for="height2">Height: <input id="height2" name="height2" value="9" type="text"></input></label>
+                <label for="inches2">Inches: <input id="inches2" name="inches2" value="19.5" type="text"></input></label>
+            </div>
+            
+            <div id="screen-2">
+                <div id="bar2"></div>
+                <div id="foot2"></div>
+            </div>
+        </div>   
+    </div>
+
+    <div id="comparison">
+        <div>
+            <h3><strong>Display 1:</strong></h3>
+            <p id="width-info-1"></p>
+            <p id="height-info-1"></p>
+            <p id="area-info-1"></p>
+            <p id="bigger-1"></p>
+        </div>
+        <div id="screen-3">
+            <div id="screen-4"></div>
+        </div>
+        <div>
+            <h3><strong>Display 2:</strong></h3>
+            <p id="width-info-2"></p>
+            <p id="height-info-2"></p>
+            <p id="area-info-2"></p>
+            <p id="bigger-2"></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
