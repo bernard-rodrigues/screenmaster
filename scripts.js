@@ -53,20 +53,30 @@ function screenUpdate() {
     const screen1area = measures1.w * measures1.h
     const screen2area = measures2.w * measures2.h
 
-    if (screen1area >= screen2area) {
+    if(screen1area == screen2area) {
         $('#screen-3').height((measures1.h * control) * reducer2)
         $('#screen-3').width((measures1.w * control) * reducer2)
         $('#screen-4').height((measures2.h * control) * reducer2)
         $('#screen-4').width((measures2.w * control) * reducer2)
-        $('#bigger-1').text('Display 1 is ' + ((measures1.a / measures2.a - 1) * 100).toFixed(2) + '% bigger than Display 2').show()
-        $('#bigger-2').hide()
+        $('#bigger-1').text('')
+        $('#bigger-2').text('')
+        $('#screen-4').css('opacity', '0')
+    }else if (screen1area > screen2area) {
+        $('#screen-3').height((measures1.h * control) * reducer2)
+        $('#screen-3').width((measures1.w * control) * reducer2)
+        $('#screen-4').height((measures2.h * control) * reducer2)
+        $('#screen-4').width((measures2.w * control) * reducer2)
+        $('#bigger-1').text('Display 1 is ' + ((measures1.a / measures2.a - 1) * 100).toFixed(2) + '% bigger than Display 2').css('opacity', '1')
+        $('#bigger-2').css('opacity', '0')
+        $('#screen-4').css('opacity', '1')
     } else if (screen1area < screen2area) {
         $('#screen-3').height((measures2.h * control) * reducer2)
         $('#screen-3').width((measures2.w * control) * reducer2)
         $('#screen-4').height((measures1.h * control) * reducer2)
         $('#screen-4').width((measures1.w * control) * reducer2)
-        $('#bigger-2').text('Display 2 is ' + ((measures2.a / measures1.a - 1) * 100).toFixed(2) + '% bigger than Display 1').show()
-        $('#bigger-1').hide()
+        $('#bigger-2').text('Display 2 is ' + ((measures2.a / measures1.a - 1) * 100).toFixed(2) + '% bigger than Display 1').css('opacity', '1')
+        $('#bigger-1').css('opacity', '0')
+        $('#screen-4').css('opacity', '1')
     }
 
     if (measures1.h > measures1.w) {
