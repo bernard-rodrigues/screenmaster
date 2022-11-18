@@ -43,6 +43,7 @@ input{
 #mainContainer{
     background-color: #f9f9f9;
     padding: 1rem 0 2rem 0;
+    border-radius: 5px;
     box-shadow: 2px 2px 3px #66666666;
     margin: 1rem 2rem;
     border: solid 1px #66666640;
@@ -64,7 +65,7 @@ input{
 }
 
 #screen-1, #screen-2{
-    background-color: #555555;
+    background-image: linear-gradient(to right, #444444, #999999);
     border: solid 3px black;
     border-radius: 5px;
     transition: height 1s, width 1s;
@@ -91,6 +92,7 @@ input{
     align-items: center;
     padding: 1rem 2rem;
     border: solid 1px #66666640;
+    border-radius: 5px;
     box-shadow: 2px 2px 3px #66666666;
     margin: 1rem 10vw;
 }
