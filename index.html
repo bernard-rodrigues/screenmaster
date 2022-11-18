@@ -16,7 +16,7 @@
 <body>
     <header>
         <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-aspect-ratio" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#f3f3f3" class="bi bi-aspect-ratio" viewBox="0 0 16 16">
                 <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5v-9zM1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
                 <path d="M2 4.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H3v2.5a.5.5 0 0 1-1 0v-3zm12 7a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H13V8.5a.5.5 0 0 1 1 0v3z"/>
             </svg>
@@ -30,7 +30,7 @@
             <div id="form1" class="form">
                 <div>
                     <label>Aspect Ratio: </label>
-                    <select id="ratio1">
+                    <select id="ratio1" title="Aspect Ratio">
                         <option value="4:3">4:3</option>
                         <option value="16:9" selected>16:9</option>
                         <option value="16:10">16:10</option>
@@ -56,7 +56,7 @@
             <div id="form2" class="form">
                 <div>
                     <label>Aspect Ratio: </label>
-                    <select id="ratio2">
+                    <select id="ratio2" title="Aspect Ratio">
                         <option value="4:3">4:3</option>
                         <option value="16:9" selected>16:9</option>
                         <option value="16:10">16:10</option>
@@ -80,7 +80,7 @@
     </div>
 
     <div id="comparison">
-        <div>
+        <div id="display-info-1">
             <h3><strong>Display 1:</strong></h3>
             <p id="width-info-1"></p>
             <p id="height-info-1"></p>
@@ -90,7 +90,7 @@
         <div id="screen-3">
             <div id="screen-4"></div>
         </div>
-        <div>
+        <div id="display-info-2">
             <h3><strong>Display 2:</strong></h3>
             <p id="width-info-2"></p>
             <p id="height-info-2"></p>

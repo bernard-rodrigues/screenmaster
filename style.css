@@ -1,4 +1,5 @@
 :root{
+    font-size: 16px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -9,15 +10,17 @@ body{
 #title{
     font-size: 1.6rem;
     font-weight: 400;
+    color: #f3f3f3;
 }
 
 #subtitle{
     font-size: 1rem;
     font-weight: 300;
+    color: #f3f3f3;
 }
 
 header{
-    background-color: #f9f9f9;
+    background-color: #090909;
     box-shadow: 2px 2px 3px #66666666;
     display: flex;
     align-items: center;
@@ -42,11 +45,8 @@ input{
 
 #mainContainer{
     background-color: #f9f9f9;
-    padding: 1rem 0 2rem 0;
-    border-radius: 5px;
-    box-shadow: 2px 2px 3px #66666666;
-    margin: 1rem 2rem;
-    border: solid 1px #66666640;
+    padding: 2rem 0 4rem 0;
+    border-bottom: solid 1px #66666640;
     display: flex;
     justify-content: space-around;
 }
@@ -74,14 +74,14 @@ input{
 }
 
 #screen-3{
-    background-color: #555555;
+    background-color: #6cc1e3;
     transition: height 1s, width 1s;
     display: flex;
     align-items: end;
 }
 
 #screen-4{
-    background-color: #999999;
+    background-color: #4995be;
     transition: height 1s, width 1s;
 }
 
@@ -90,17 +90,14 @@ input{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    border: solid 1px #66666640;
-    border-radius: 5px;
-    box-shadow: 2px 2px 3px #66666666;
-    margin: 1rem 10vw;
+    padding: 2rem 6rem;
+    border-bottom: solid 1px #66666640;
 }
 
 #bar1, #bar2{
     background-color: black;
     height: 1.5rem;
-    width: 4rem;
+    width: 2.5rem;
     justify-self: center;
     position: absolute;
     top: 100%;
@@ -111,14 +108,77 @@ input{
 #foot1, #foot2{
     background-color: black;
     height: 0.5rem;
-    width: 6rem;
+    width: 5rem;
     justify-self: center;
     position: absolute;
     top: calc(100% + 1rem);
     left: 50%;
     transform: translate(-50%);
+    border-radius: 3px;
 }
 
 .border{
     border: solid 1px #666666;
+}
+
+@media (max-width: 768px){
+    :root{
+        font-size: 12px;
+    }
+
+    #subtitle{
+        display: none;
+    }
+
+    #mainContainer{
+        display: block;
+    }
+
+    #screen-1{
+        margin-bottom: 4rem;
+    }
+
+    #screen-1, #screen-2{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .form{
+        display: flex;
+        gap: 2rem;
+    }
+
+    #bar1, #bar2{
+        height: 0.75rem;
+        width: 1.5rem;
+        justify-self: center;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    #foot1, #foot2{
+        height: 0.25rem;
+        width: 4rem;
+        justify-self: center;
+        position: absolute;
+        top: calc(100% + 0.6rem);
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 3px;
+    }
+
+    #comparison{
+        display: block;
+        padding: 2rem 3rem;
+    }
+
+    #display-info-1{
+        margin-bottom: 2rem;
+    }
+
+    #display-info-2{
+        margin-top: 2rem;
+    }
 }

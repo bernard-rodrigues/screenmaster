@@ -1,5 +1,5 @@
 const reducer1 = 0.5
-const reducer2 = 0.75
+let reducer2 = 0.9
 
 // Converts from inches to centimeters
 function convertToCentimeter(value) {
@@ -30,6 +30,10 @@ function screenUpdate() {
         control = reducer1 * ($(document.body).height() / (measures1.h + measures2.h))
     }else{
         control = reducer1 * ($(document.body).width() / (measures1.w + measures2.w))
+    }
+
+    if($(document.body).width() <= 768){
+        control = control * 2
     }
 
     $('#screen-1').height(measures1.h * control)
@@ -88,18 +92,18 @@ $(document).ready(function () {
 })
 
 $('#ratio1').change(function () {
-    if($('#ratio1').val().split(':')[1] > 10){
+    if($('#ratio1').val().split(':')[1] > 10 && $('#inches1').val() > 10){
         $('#inches1').val('6.7')
-    }else{
+    }else if($('#ratio1').val().split(':')[1] < 10 && $('#inches1').val() < 10){
         $('#inches1').val('19.5')
     }
     screenUpdate()
 })
 
 $('#ratio2').change(function () {
-    if($('#ratio2').val().split(':')[1] > 10){
+    if($('#ratio2').val().split(':')[1] > 10 && $('#inches2').val() > 10){
         $('#inches2').val('6.7')
-    }else{
+    }else if($('#ratio2').val().split(':')[1] < 10 && $('#inches2').val() < 10){
         $('#inches2').val('19.5')
     }
     screenUpdate()
