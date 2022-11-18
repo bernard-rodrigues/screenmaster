@@ -1,10 +1,16 @@
 :root{
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
+    color: #090909;
 }
 
 body{
     margin: 0;
+}
+
+body a{
+    text-decoration: none;
+    color: #090909;
 }
 
 #title{
@@ -120,6 +126,16 @@ input{
 
 .border{
     border: solid 1px #666666;
+}
+
+footer{
+    padding: 1rem;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.75rem;
 }
 
 @media (max-width: 768px){
