@@ -23,16 +23,20 @@ function screenMaker(inches, prop_w = 16.0, prop_h = 9.0) {
 
 // Updates screen's shape
 function screenUpdate() {
+    let mobile = false
     measures1 = screenMaker($('#inches1').val(), $('#ratio1').val().split(':')[0], $('#ratio1').val().split(':')[1])
     measures2 = screenMaker($('#inches2').val(), $('#ratio2').val().split(':')[0], $('#ratio2').val().split(':')[1])
 
     if($('#ratio1').val().split(':')[1] > 10 && $('#ratio2').val().split(':')[1] > 10) {
         control = reducer1 * ($(document.body).height() / (measures1.h + measures2.h))
+        mobile = true
     }else{
         control = reducer1 * ($(document.body).width() / (measures1.w + measures2.w))
     }
 
-    if($(document.body).width() <= 768){
+    if($(document.body).width() <= 768 && mobile){
+        control = control * 0.5
+    }else if($(document.body).width() <= 768){
         control = control * 2
     }
 
