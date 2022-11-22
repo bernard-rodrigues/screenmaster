@@ -820,6 +820,10 @@ select {
   border-width: 3px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-b {
   border-bottom-width: 1px;
 }
@@ -900,6 +904,10 @@ select {
   padding-bottom: 4rem;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .font-\[\'Poppins\'\] {
   font-family: 'Poppins';
 }
@@ -953,6 +961,14 @@ select {
     top: calc(100% + 0.6rem);
   }
 
+  .md\:left-\[80\%\] {
+    left: 80%;
+  }
+
+  .md\:right-\[50\%\] {
+    right: 50%;
+  }
+
   .md\:mb-\[4rem\] {
     margin-bottom: 4rem;
   }
@@ -965,12 +981,24 @@ select {
     margin-top: 2rem;
   }
 
+  .md\:ml-\[50\%\] {
+    margin-left: 50%;
+  }
+
   .md\:block {
     display: block;
   }
 
+  .md\:inline-block {
+    display: inline-block;
+  }
+
   .md\:flex {
     display: flex;
+  }
+
+  .md\:grid {
+    display: grid;
   }
 
   .md\:hidden {
@@ -983,6 +1011,10 @@ select {
 
   .md\:w-\[1\.5rem\] {
     width: 1.5rem;
+  }
+
+  .md\:w-\[100\%\] {
+    width: 100%;
   }
 
   .md\:translate-x-\[-50\%\] {
@@ -998,6 +1030,10 @@ select {
     justify-self: center;
   }
 
+  .md\:border {
+    border-width: 1px;
+  }
+
   .md\:py-\[2rem\] {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -1006,6 +1042,45 @@ select {
   .md\:px-\[3rem\] {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .md\:px-\[30rem\] {
+    padding-left: 30rem;
+    padding-right: 30rem;
+  }
+
+  .md\:px-\[\] {
+    padding-left: ;
+    padding-right: ;
+  }
+
+  .md\:px-\[0\] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .md\:px-\[4rem\] {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .md\:px-\[5rem\] {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .md\:px-\[2rem\] {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .md\:px-\[1rem\] {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:text-center {
+    text-align: center;
   }
 
   .md\:text-sm {
