@@ -1,11 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/*.{html,js}"],
+  content: ["./*.{html,js}"],
   theme: {
     extend: {},
     screens: {
       'md': {'max': '767px'}
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
