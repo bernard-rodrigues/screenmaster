@@ -16,7 +16,7 @@
     <title>Screen Master</title>
 </head>
 
-<body class="m-0 font-['Poppins']">
+<body class="m-0 font-['Poppins'] bg-[#f9f9f9]">
     <header class="bg-[#090909] flex py-[1rem] px-[2rem] items-center justify-between">
         <div class="flex gap-[1rem] items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#f3f3f3" class="bi bi-aspect-ratio" viewBox="0 0 16 16">
@@ -28,7 +28,7 @@
         <div><p id="subtitle" class="text-base font-[300] text-[#f3f3f3] md:hidden">A screen size comparison tool</p></div>
     </header>
 
-    <div id="mainContainer" class="bg-[#f9f9f9] pt-[2rem] pb-[4rem] flex justify-around border-b md:block">
+    <div id="mainContainer" class="pt-[2rem] pb-[4rem] px-[12vw] flex justify-between border-b md:block">
         <div id="data1" class="block justify-center self-end">
             <div id="form1" class="grid justify-center m-[1rem] gap-[0.5rem] md:flex md:gap-[2rem] md:text-sm">
                 <div>
@@ -82,7 +82,7 @@
         </div>   
     </div>
 
-    <div id="comparison" class="bg-[#f9f9f9] flex gap-[2rem] justify-between items-center py-[2rem] px-[6rem] border-b md:block md:py-[2rem] md:px-[3rem]">
+    <div id="comparison" class="flex justify-between items-center py-[2rem] px-[12vw] border-b md:block md:py-[2rem] md:px-[3rem]">
         <div id="display-info-1" class="md:mb-[2rem] md:text-sm">
             <h3><strong>Display 1</strong></h3>
             <p id="width-info-1"></p>
@@ -90,8 +90,8 @@
             <p id="area-info-1"></p>
             <p id="bigger-1"></p>
         </div>
-        <div id="screen-3" class="bg-[#6cc1e3] flex items-end transition-[height, width] duration-[1s]">
-            <div id="screen-4" class="bg-[#4995be] transition-[height, width, opacity] duration-[1s]"></div>
+        <div id="screen-3" class="bg-[#6cc1e3] flex items-end overflow-visible transition-[height, width] duration-[1s]">
+            <div id="screen-4" class="bg-[#4995be] overflow-visible transition-[height, width, opacity] duration-[1s]"></div>
         </div>
         <div id="display-info-2" class="md:mt-[2rem] md:text-sm">
             <h3><strong>Display 2</strong></h3>

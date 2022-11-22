@@ -707,6 +707,26 @@ select {
   margin: 1rem;
 }
 
+.mx-\[20vw\] {
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+.mx-\[10vw\] {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.mx-\[15vw\] {
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+.mx-\[12vw\] {
+  margin-left: 12vw;
+  margin-right: 12vw;
+}
+
 .block {
   display: block;
 }
@@ -788,6 +808,10 @@ select {
   justify-self: center;
 }
 
+.overflow-visible {
+  overflow: visible;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -861,6 +885,11 @@ select {
 .px-\[6rem\] {
   padding-left: 6rem;
   padding-right: 6rem;
+}
+
+.px-\[12vw\] {
+  padding-left: 12vw;
+  padding-right: 12vw;
 }
 
 .pt-\[2rem\] {
